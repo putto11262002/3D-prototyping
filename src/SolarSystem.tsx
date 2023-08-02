@@ -1,8 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import React from "react";
-import { Vector3 } from "three";
 import * as THREE from "three";
-import { Cube } from "./RotatingCube";
 import { OrbitControls } from "@react-three/drei";
 const radius = 1;
 const widthSegment = 6;
