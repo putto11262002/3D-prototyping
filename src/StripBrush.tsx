@@ -50,6 +50,7 @@ const StripBrush = () => {
           <div className="col-span-1 flex gap-2 flex-col">
             <label htmlFor="">Height</label>
             <input
+            max={10}
               className="input"
               type="number"
               value={height}
@@ -60,6 +61,7 @@ const StripBrush = () => {
           <div className="col-span-1 flex gap-2  flex-col">
             <label htmlFor="">Width</label>
             <input
+            max={15}
               className="input"
               type="number"
               value={width}
@@ -70,6 +72,7 @@ const StripBrush = () => {
           <div className="col-span-1 flex gap-2  flex-col">
             <label htmlFor="">Length</label>
             <input
+            max={50}
               className="input"
               type="number"
               value={length}
@@ -80,6 +83,7 @@ const StripBrush = () => {
           <div className=" grid-cols-1 flex gap-2  flex-col">
             <label htmlFor="">Material height</label>
             <input
+            max={20}
               className="input"
               type="number"
               value={materialHeight}
