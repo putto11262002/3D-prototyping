@@ -20,6 +20,12 @@ const StripBrush = () => {
   const woodColorMap = useLoader(TextureLoader, "/wood.jpg");
   const plasticColorMap = useLoader(TextureLoader, "/plastic.png");
 
+  woodColorMap.wrapT = THREE.RepeatWrapping
+  woodColorMap.wrapS = THREE.RepeatWrapping
+  woodColorMap.repeat.set(1, 6)
+  plasticColorMap.wrapS = THREE.RepeatWrapping
+  plasticColorMap.repeat.setY(3)
+
   const backingMaterials = [woodColorMap, plasticColorMap];
 
   const renderThings = React.useCallback(() => {
